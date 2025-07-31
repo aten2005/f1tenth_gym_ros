@@ -27,6 +27,8 @@ services:
     build: ./
     volumes: 
       - .:/sim_ws/src/f1tenth_gym_ros
+      - ./custom_packages:/sim_ws/src
+      - ./.vscode:/sim_ws
     environment:
       - DISPLAY=novnc:0.0
     networks:
